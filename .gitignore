@@ -1,0 +1,75 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+build/
+dist/
+
+# Virtual environments
+venv/
+.env/
+.env.*
+.envrc
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Data (DVC handles this)
+# =========================
+data/images/
+data/embeddings/
+
+# =========================
+# Model checkpoints (if ever added)
+# =========================
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# =========================
+# Docker
+# =========================
+*.tar
+
+# =========================
+# Pytest / coverage (if added later)
+# =========================
+.coverage
+htmlcov/
+.pytest_cache/
+
+# =========================
+# Jupyter (if ever used locally)
+# =========================
+.ipynb_checkpoints/
+/data
+
+venv/
+.env
+data/images/
+data/embeddings/
+*.log
