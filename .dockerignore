@@ -5,3 +5,6 @@ __pycache__/
 data/images/
 *.log
 .env
+data/
+.env
+.dvc/
