@@ -10,3 +10,4 @@ python-multipart
 dvc
 pytest
 httpx
+azure-storage-blob

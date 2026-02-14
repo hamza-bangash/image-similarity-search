@@ -1,10 +1,10 @@
-venv/
 __pycache__/
-.git/
+*.pyc
+venv/
+.env
+.git
 .gitignore
-data/images/
-*.log
-.env
+.dvc
+.dvcignore
 data/
-.env
-.dvc/
+tests/

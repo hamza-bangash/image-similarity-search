@@ -2,8 +2,9 @@ from fastapi import FastAPI,UploadFile,File,HTTPException
 from PIL import Image
 import numpy as np
 
+from app.services.blob_service import download_embeddings
 from app.services.embedding_service import load_model, extract_embedding
-from app.services.similarity_service import (load_embeddings,normalize_embeddings,find_similar)
+from app.services.similarity_service import (normalize_embeddings,find_similar)
 
 from app.utils.image_utils import preprocess_image
 
@@ -15,7 +16,7 @@ def startup():
 
     app.state.model = load_model()
 
-    embeddings, image_ids = load_embeddings()
+    embeddings, image_ids = download_embeddings()
     app.state.embeddings = normalize_embeddings(embeddings)
     app.state.image_ids = image_ids
     app.state.num_embeddings = app.state.embeddings.shape[0]
